@@ -168,15 +168,18 @@ var p2 = new Promise(function (resolve, reject) {
 var p1 = new Promise(function (resolve, reject) {
   setTimeout(() => reject(new Error('fail')), 3000)
 })
+
 var p2 = new Promise(function (resolve, reject) {
   setTimeout(() => resolve(p1), 1000)
 })
-p2.then(result => console.log(result))
-p2.catch(error => console.log(error))
+
+p2
+  .then(result => console.log(result))
+  .catch(error => console.log(error))
 // Error: fail
 ```
 
-上面代码中，`p1`是一个Promise，3秒之后变为`rejected`。`p2`的状态由`p1`决定，1秒之后，`p2`调用`resolve`方法，但是此时`p1`的状态还没有改变，因此`p2`的状态也不会变。又过了2秒，`p1`变为`rejected`，`p2`也跟着变为`rejected`。
+上面代码中，`p1`是一个Promise，3秒之后变为`rejected`。`p2`的状态在1秒之后改变，`resolve`方法返回的是`p1`。此时，由于`p2`返回的是另一个Promise，所以后面的`then`语句都变成针对后者（`p1`）。又过了2秒，`p1`变为`rejected`，导致触发`catch`方法指定的回调函数。
 
 ## Promise.prototype.then()
 
@@ -239,8 +242,7 @@ p.then((val) => console.log("fulfilled:", val))
   .catch((err) => console.log("rejected:", err));
 
 // 等同于
-
-p.then((val) => console.log(fulfilled:", val))
+p.then((val) => console.log("fulfilled:", val))
   .then(null, (err) => console.log("rejected:", err));
 ```
 
@@ -765,10 +767,4 @@ run(g);
 ```
 
 上面代码的Generator函数`g`之中，有一个异步操作`getFoo`，它返回的就是一个`Promise`对象。函数`run`用来处理这个`Promise`对象，并调用下一个`next`方法。
-
-## async函数
-
-async函数与Promise、Generator函数一样，是用来取代回调函数、解决异步操作的一种方法。它本质上是Generator函数的语法糖。async函数并不属于ES6，而是被列入了ES7，但是traceur、Babel.js、regenerator等转码器已经支持这个功能，转码后立刻就能使用。
-
-async函数的详细介绍，请看《异步操作》一章。
 
