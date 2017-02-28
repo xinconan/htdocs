@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery.fx.off | jQuery API 中文手册</title>
+<meta name="author" content="jQuery 中文手册 - hemin.cn/jq/">
+<meta name="description" content="关闭页面上所有的动画。 - jQuery API 中文手册">
+<meta name="keywords" content="jquery,chm,手册,在线,api" />
+<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="http://hemin.cn/jq/style/style.css"  />
+</head>
+<body id="split">
+<div id='left' class='dtree'>
+  <p style="text-align:center">
+    <input type="text" name="query" id="query" placeholder="请输入关键字"/>
+    <!--<input type="button" id="butsoso" value="搜索" />--></p>
+  <p style="margin:7px 0; text-align:center"><a href="javascript:void(0)" id="openAll">全部展开</a> | <a href="javascript:void(0)" id="closeAll">全部折叠 </a> | <a href="index.html" tppabs="http://hemin.cn/jq/index.html">速查表</a></p>
+	<div id="menu">
+    
+    </div>
+</div>
+<div id="content" class="a2">
+  <div rel="jQuery.fx.off">
+    <h2><span>返回值:Boolean</span>jQuery.fx.off</h2>
+    <h3><em>V1.3</em>概述</h3>
+    <div class="desc">
+      <p>关闭页面上所有的动画。</p>
+      <div class="longdesc">
+        <p>把这个属性设置为true可以立即关闭所有动画(所有效果会立即执行完毕)。有些情况下可能需要这样，比如：</p>
+        <p>* 你在配置比较低的电脑上使用jQuery。</p>
+        <p>* 你的一些用户由于动画效果而遇到了 <a href="javascript:if(confirm(%27http://www.jdeegan.phlegethon.org/turn_off_animation.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.jdeegan.phlegethon.org/turn_off_animation.html%27" tppabs="http://www.jdeegan.phlegethon.org/turn_off_animation.html">可访问性问题</a></p>
+        <p>当把这个属性设成false之后，可以重新开启所有动画。</p>
+      </div>
+    </div>
+    <div class="example">
+      <h3>示例</h3>
+      <span id="f_ad2"></span>
+      <h4>描述:</h4>
+      <p>执行一个禁用的动画</p>
+      <h5>jQuery 代码:</h5>
+      <pre><code>  jQuery.fx.off = true;
+  $("input").click(function(){
+      $("div").toggle("slow");
+  });</code></pre>
+    </div>
+  </div>
+    
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js" tppabs="http://hemin.cn/jq/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js" tppabs="http://hemin.cn/jq/js/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/dtree.js" tppabs="http://hemin.cn/jq/js/dtree.js"></script>
+<script type="text/javascript" src="js/js.js" tppabs="http://hemin.cn/jq/js/js.js"></script>
+
+</html>

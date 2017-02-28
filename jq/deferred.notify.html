@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>deferred.notify(args) | jQuery API 中文手册</title>
+<meta name="author" content="jQuery 中文手册 - hemin.cn/jq/">
+<meta name="description" content="调用一个给定args的递延对象上的进行中的回调 （progressCallbacks）。通常情况下，只有一个递延的创建者，应调用此方法;你可以防止其他代码改变Deferred的状态或者通过deferred.promise()返回一个受限制的承诺对象报告状态 - jQuery API 中文手册">
+<meta name="keywords" content="jquery,chm,手册,在线,api" />
+<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="http://hemin.cn/jq/style/style.css"  />
+</head>
+<body id="split">
+<div id='left' class='dtree'>
+  <p style="text-align:center">
+    <input type="text" name="query" id="query" placeholder="请输入关键字"/>
+    <!--<input type="button" id="butsoso" value="搜索" />--></p>
+  <p style="margin:7px 0; text-align:center"><a href="javascript:void(0)" id="openAll">全部展开</a> | <a href="javascript:void(0)" id="closeAll">全部折叠 </a> | <a href="index.html" tppabs="http://hemin.cn/jq/index.html">速查表</a></p>
+	<div id="menu">
+    
+    </div>
+</div>
+<div id="content" class="a2">
+  <div rel="deferred.notify">
+    <h2><span>返回值:Deferred Object</span>deferred.notify(args)</h2>
+    <h3>概述</h3>
+    <div class="desc">
+      <p>调用一个给定args的递延对象上的进行中的回调 （progressCallbacks）</p>
+      <div class="longdesc">
+        <p>通常情况下，只有一个递延的创建者，应调用此方法;你可以防止其他代码改变Deferred的状态或者通过deferred.promise()返回一个受限制的承诺对象报告状态</p>
+        <p>当&nbsp;deferred.notify&nbsp;被访问， 任何progressCallbacks 可以通过访问<a href="javascript:if(confirm(%27http://api.jquery.com/deferred.then/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://api.jquery.com/deferred.then/%27" tppabs="http://api.jquery.com/deferred.then/">deferred.then</a>&nbsp;好或者&nbsp;<a href="javascript:if(confirm(%27http://api.jquery.com/deferred.progress/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://api.jquery.com/deferred.progress/%27" tppabs="http://api.jquery.com/deferred.progress/">deferred.progress</a>来添加。回调是在它们被添加的顺序执行。每次通过来自.notify()的args回调。任何为.notify()后递延是解决或拒绝（或之后添加任何progressCallbacks ）被忽略。欲了解更多信息，请参阅文档&nbsp;<a href="javascript:if(confirm(%27http://api.jquery.com/category/deferred-object/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://api.jquery.com/category/deferred-object/%27" tppabs="http://api.jquery.com/category/deferred-object/">Deferred object</a>.</p>
+      </div>
+    </div>
+    <h3>参数</h3>
+    <div class="parameter">
+      <h4><strong>args</strong><em>V1.7</em></h4>
+      <p>可选参数传递到进行中的回调（progressCallbacks）</p>
+    </div>
+  </div>
+    
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js" tppabs="http://hemin.cn/jq/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js" tppabs="http://hemin.cn/jq/js/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/dtree.js" tppabs="http://hemin.cn/jq/js/dtree.js"></script>
+<script type="text/javascript" src="js/js.js" tppabs="http://hemin.cn/jq/js/js.js"></script>
+
+</html>

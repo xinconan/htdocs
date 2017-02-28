@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:target | jQuery API 中文手册</title>
+<meta name="author" content="jQuery 中文手册 - hemin.cn/jq/">
+<meta name="description" content="选择由文档URI的格式化识别码表示的目标元素。如果文档的URI包含一个格式化的标识符，或hash（哈希）， 然后:target选择器将匹配ID和标识符相匹配的元素。  例如，给定的URI http://example.com/#foo， $( &quot;p:target&quot; )，将选择&lt;p id=&quot;foo&quot;&gt;元素。 - jQuery API 中文手册">
+<meta name="keywords" content="jquery,chm,手册,在线,api" />
+<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="http://hemin.cn/jq/style/style.css"  />
+</head>
+<body id="split">
+<div id='left' class='dtree'>
+  <p style="text-align:center">
+    <input type="text" name="query" id="query" placeholder="请输入关键字"/>
+    <!--<input type="button" id="butsoso" value="搜索" />--></p>
+  <p style="margin:7px 0; text-align:center"><a href="javascript:void(0)" id="openAll">全部展开</a> | <a href="javascript:void(0)" id="closeAll">全部折叠 </a> | <a href="index.html" tppabs="http://hemin.cn/jq/index.html">速查表</a></p>
+	<div id="menu">
+    
+    </div>
+</div>
+<div id="content" class="a2">
+  <div rel="target">
+    <h2><span>返回值:jQuery</span>:target</h2>
+    <h3><em>V1.9</em>概述</h3>
+    <div class="desc">
+      <p>选择由文档URI的格式化识别码表示的目标元素。</p>
+      <div class="longdesc">
+        <p>如果文档的URI包含一个格式化的标识符，或hash（哈希）， 然后:target选择器将匹配ID和标识符相匹配的元素。  例如，给定的URI http://example.com/#foo， $( &quot;p:target&quot; )，将选择&lt;p id=&quot;foo&quot;&gt;元素。</p>
+        <p>这个不寻常的用法，可进一步讨论中找到 <a href="javascript:if(confirm(%27http://www.w3.org/TR/css3-selectors/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.w3.org/TR/css3-selectors/#nth-child-pseudo%27" tppabs="http://www.w3.org/TR/css3-selectors/#nth-child-pseudo">W3C CSS specification</a>.</p>
+      </div>
+    </div>
+   <!-- <h3>参数</h3>
+    <div class="parameter">
+      <h4><strong>language</strong><span></span><em>V1.9</em></h4>
+      <p>语言代码</p>
+    </div>-->
+    <div class="example">
+      <h3>示例      </h3>
+      <p>Return which DOM element triggered the event      </p>
+      <pre>$(&quot;p, button, h1, h2&quot;).click(function(event){<br />  $(&quot;div&quot;).html(&quot;Triggered by a &quot; + event.target.nodeName + &quot; element.&quot;);<br />});</pre>
+    </div>
+  </div>
+    
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js" tppabs="http://hemin.cn/jq/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js" tppabs="http://hemin.cn/jq/js/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/dtree.js" tppabs="http://hemin.cn/jq/js/dtree.js"></script>
+<script type="text/javascript" src="js/js.js" tppabs="http://hemin.cn/jq/js/js.js"></script>
+
+</html>
